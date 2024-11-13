@@ -1,0 +1,27 @@
+{
+  "author": "Ruben Shalimov",
+  "bugs": {
+    "url": "https://github.com/RobinBobin/mimetype-constants/issues"
+  },
+  "description": "MIME constants that can be extended.",
+  "homepage": "https://github.com/RobinBobin/mimetype-constants#readme",
+  "keywords": [
+    "MIME",
+    "mime-constants"
+  ],
+  "main": "src/index.ts",
+  "name": "@robinbobin/mimetype-constants",
+  "packageManager": "pnpm@9.13.0+sha512.beb9e2a803db336c10c9af682b58ad7181ca0fbd0d4119f2b33d5f2582e96d6c0d93c85b23869295b765170fbdaa92890c0da6ada457415039769edf3c959efe",
+  "repository": "github:RobinBobin/mimetype-constants.git",
+  "scripts": {
+    "prepack": "./prepack.sh"
+  },
+  "version": "1.0.0",
+  "dependencies": {
+    "@robinbobin/ts-eslint-prettier": "^1.1.0",
+    "eslint": "^9.14.0",
+    "prettier": "^3.3.3",
+    "radashi": "^12.2.3",
+    "typescript": "^5.6.3"
+  }
+}
