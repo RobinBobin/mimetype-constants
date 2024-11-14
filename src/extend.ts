@@ -7,20 +7,21 @@ import { mimeTypes } from './mimeTypes'
 
 export function extend<TType extends string, TSubtype extends string>(
   type: TType,
-  subtypeGroup: TSubtypeGroup<TSubtype>
+  subtypeGroup: TSubtypeGroup<TSubtype>,
+  baseTypes: TMimeTypes = mimeTypes
 ): TMimeTypes & TTypeGroup<TType, TSubtype> {
   const typeGroup = createTypeGroup(type, subtypeGroup)
 
-  const isExistingType = Boolean(mimeTypes[type as keyof TMimeTypes])
+  const isExistingType = Boolean(baseTypes[type as keyof TMimeTypes])
 
   if (!isExistingType) {
     return {
-      ...mimeTypes,
+      ...baseTypes,
       ...typeGroup
     }
   }
 
-  const result = cloneDeep(mimeTypes) as TMimeTypes &
+  const result = cloneDeep(baseTypes) as TMimeTypes &
     TTypeGroup<TType, TSubtype>
 
   for (const [key, value] of Object.entries(typeGroup[type])) {
