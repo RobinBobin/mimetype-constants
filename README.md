@@ -1,8 +1,6 @@
 Extensible MIME constants with typescript support.
 
-    import { createTypeGroup } from './createTypeGroup'
-    import { extend } from './extend'
-    import { mimeTypes } from './mimeTypes'
+    import { createTypeGroup, extend, mimeTypes } from '@robinbobin/mimetype-constants'
 
 <!-- -->
 
