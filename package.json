@@ -12,7 +12,7 @@
     "prettier": "^3.3.3",
     "typescript": "^5.6.3"
   },
-  "description": "MIME constants that can be extended.",
+  "description": "Extensible MIME constants with typescript support",
   "files": [
     "js",
     "package.json",
@@ -21,7 +21,8 @@
   "homepage": "https://github.com/RobinBobin/mimetype-constants#readme",
   "keywords": [
     "MIME",
-    "mime-constants"
+    "mime-constants",
+    "typescript"
   ],
   "main": "js/src/index.js",
   "name": "@robinbobin/mimetype-constants",
@@ -30,5 +31,5 @@
   "scripts": {
     "prepack": "./prepack.sh"
   },
-  "version": "1.1.0"
+  "version": "2.0.0"
 }
