@@ -1,7 +1,7 @@
 {
   "compilerOptions": {
     "declaration": true,
-    "outDir": "js"
+    "outDir": "dist"
   },
   "extends": "@robinbobin/ts-eslint-prettier",
   "files": ["eslint.config.mjs", "prettier.config.mjs"],

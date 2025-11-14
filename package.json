@@ -13,8 +13,16 @@
     "typescript": "^5.6.3"
   },
   "description": "Extensible MIME constants with typescript support",
+  "exports": {
+    "require": {
+      "default": "./dist/cjs/src/index.js",
+      "types": "./dist/cjs/src/index.d.ts"
+    },
+    "default": "./dist/js/src/index.js",
+    "types": "./dist/js/src/index.d.ts"
+  },
   "files": [
-    "js",
+    "dist",
     "package.json",
     "src"
   ],
@@ -24,7 +32,6 @@
     "mime-constants",
     "typescript"
   ],
-  "main": "js/src/index.js",
   "name": "@robinbobin/mimetype-constants",
   "packageManager": "pnpm@9.13.0+sha512.beb9e2a803db336c10c9af682b58ad7181ca0fbd0d4119f2b33d5f2582e96d6c0d93c85b23869295b765170fbdaa92890c0da6ada457415039769edf3c959efe",
   "repository": "github:RobinBobin/mimetype-constants.git",
