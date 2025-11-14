@@ -8,6 +8,10 @@ importers:
 
   .:
     dependencies:
+      radashi:
+        specifier: ^12.2.3
+        version: 12.2.3
+    devDependencies:
       '@robinbobin/ts-eslint-prettier':
         specifier: ^1.1.0
         version: 1.1.0(eslint@9.14.0)(prettier@3.3.3)(typescript@5.6.3)
@@ -17,9 +21,6 @@ importers:
       prettier:
         specifier: ^3.3.3
         version: 3.3.3
-      radashi:
-        specifier: ^12.2.3
-        version: 12.2.3
       typescript:
         specifier: ^5.6.3
         version: 5.6.3

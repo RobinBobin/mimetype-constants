@@ -33,7 +33,7 @@
     "typescript"
   ],
   "name": "@robinbobin/mimetype-constants",
-  "packageManager": "pnpm@9.13.0+sha512.beb9e2a803db336c10c9af682b58ad7181ca0fbd0d4119f2b33d5f2582e96d6c0d93c85b23869295b765170fbdaa92890c0da6ada457415039769edf3c959efe",
+  "packageManager": "pnpm@10.22.0+sha512.bf049efe995b28f527fd2b41ae0474ce29186f7edcb3bf545087bd61fbbebb2bf75362d1307fda09c2d288e1e499787ac12d4fcb617a974718a6051f2eee741c",
   "repository": "github:RobinBobin/mimetype-constants.git",
   "scripts": {
     "prepack": "./prepack.sh"
