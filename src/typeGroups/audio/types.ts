@@ -1,4 +1,6 @@
-export type TAudioSubtype =
+import type { TSubtypeGroup, TTypeGroup } from '../types'
+
+type TAudioSubtype =
   | 'midi'
   | 'mp4'
   | 'mpeg'
@@ -14,3 +16,8 @@ export type TAudioSubtype =
   | 'xMpegurl'
   | 'xMsWma'
   | 'xWav'
+
+type TAudioSubtypeGroup = TSubtypeGroup<TAudioSubtype>
+type TAudioTypeGroup = TTypeGroup<'audio', TAudioSubtype>
+
+export type { TAudioSubtype, TAudioSubtypeGroup, TAudioTypeGroup }

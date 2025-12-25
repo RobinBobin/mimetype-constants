@@ -1,4 +1,3 @@
-// eslint-disable-next-line import-x/no-unused-modules
-export * from './createTypeGroup'
-export * from './extend'
+export { extend } from './extend'
 export * from './mimeTypes'
+export * from './typeGroups'

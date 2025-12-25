@@ -1,4 +1,6 @@
-export type TApplicationSubtype =
+import type { TSubtypeGroup, TTypeGroup } from '../types'
+
+type TApplicationSubtype =
   | 'atomXml'
   | 'atomcatXml'
   | 'ecmascript'
@@ -56,3 +58,12 @@ export type TApplicationSubtype =
   | 'xTar'
   | 'xWwwFormUrlencoded'
   | 'zip'
+
+type TApplicationSubtypeGroup = TSubtypeGroup<TApplicationSubtype>
+type TApplicationTypeGroup = TTypeGroup<'application', TApplicationSubtype>
+
+export type {
+  TApplicationSubtype,
+  TApplicationSubtypeGroup,
+  TApplicationTypeGroup
+}

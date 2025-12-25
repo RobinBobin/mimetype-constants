@@ -1,4 +1,5 @@
-import type { TMimeTypes, TTypeGroup } from './types'
+import type { TMimeTypes } from './mimeTypes'
+import type { TTypeGroup } from './typeGroups'
 
 import { omit } from 'radashi'
 

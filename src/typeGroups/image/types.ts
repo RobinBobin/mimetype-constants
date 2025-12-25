@@ -1,4 +1,6 @@
-export type TImageSubtype =
+import type { TSubtypeGroup, TTypeGroup } from '../types'
+
+type TImageSubtype =
   | 'avif'
   | 'bmp'
   | 'gif'
@@ -8,3 +10,8 @@ export type TImageSubtype =
   | 'tiff'
   | 'vndMicrosoftIcon'
   | 'webp'
+
+type TImageSubtypeGroup = TSubtypeGroup<TImageSubtype>
+type TImageTypeGroup = TTypeGroup<'image', TImageSubtype>
+
+export type { TImageSubtype, TImageSubtypeGroup, TImageTypeGroup }
